@@ -5,54 +5,78 @@
         <link rel="shortcut icon" type="image/png" href=""/>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-        <!-- Bootstrap JavaScript và Popper.js -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+        <!-- Bootstrap JavaScript và Popper.js, jquery-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
        
     </head>
     <body>
        <div class="banner">
+        
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active"></div>
-                <div class="carousel-item"></div>
-                <div class="carousel-item"></div>
-           
-          
-                    <div class="container">
-                        <nav class="navbar navbar-expand-lg ">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/slidershow/logo1.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="image/slidershow/logo2.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="image/slidershow/logo3.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+              <style>
+                .banner .container-fluid{
+                   width: 80%;
+                   height: 100%;
+                   border-bottom: 1px solid #fff ;
+                }
+                .banner .wrapper{
+                    position: fixed;
+                    
+              
+                }
+              </style>
+                  
+                    <div class="wrapper">
+                        <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
                             <div class="logomenu" href="#"><img src="image/logomenu.png" alt=""></div>
+                            <style>
+                                .navbar-toggler{
+                                    background-color: rgb(163, 163, 175);
+                                }
+                            </style>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button> <!--menu thu nho ve mobile-->
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">TRANG CHU</a>
+                                            <a class="nav-link" href="#">TRANG CHỦ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">GIOI THIEU</a>
+                                            <a class="nav-link" href="#">GIỚI THIỆU</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            DU AN
+                                            DỰ ÁN
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <p class="dropdown-item" href="#">BIET THU</p>
-                                            <p class="dropdown-item" href="#">BIET THU</p>
-                                            <p class="dropdown-item" href="#">BIET THU</p>
+                                            <p class="dropdown-item" href="#">BIỆT THỰ</p>
+                                            <p class="dropdown-item" href="#">NHÀ PHỐ</p>
+                                            <p class="dropdown-item" href="#">NHÀ ĐẤT</p>
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">CONG TRINH THUC TE</a>
+                                            <a class="nav-link" href="#">CÔNG TRÌNH THỰC TẾ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">BANG GIA</a>
+                                            <a class="nav-link" href="#">BẢNG GIÁ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">LIEN HE</a>
+                                            <a class="nav-link" href="#">LIÊN HỆ</a>
                                         </li>
                                         <li class="nav-item">&#128269;
                                             
@@ -67,7 +91,7 @@
                              </div>
                         </nav>
                     </div>
-                    
+               
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -76,15 +100,20 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                     </button>
+
+                    <div class="xemthem"> 
+                        <div class="xem" href="#"><p>XEM THÊM</p></div>
+                    </div>
                 
-                    
                
                 </div>
                
             </div>
         
-      
+            
         </div>
-       
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex rem facere expedita eveniet aut beatae mollitia quo, fugiat consequuntur, quos laborum? Velit quisquam magnam at numquam molestias quibusdam ratione cum aut culpa temporibus? Inventore ipsa iusto reprehenderit dignissimos, illo animi distinctio quis odit nihil deserunt repellendus mollitia exercitationem vel tempore! Nam maiores soluta dolorem! Consequatur maiores enim, laboriosam at tempore omnis voluptate commodi perferendis fugiat corrupti eaque consectetur aperiam? Animi impedit ea tempora nihil ducimus sunt accusamus ipsum obcaecati fuga dolor quos nulla deserunt soluta, dolore, numquam saepe at est necessitatibus officiis quisquam. Officiis esse autem maiores, deleniti eos minima iusto dicta hic vitae aspernatur saepe sint minus! Consequatur mollitia repellendus dignissimos ex! Laborum incidunt, ad autem dolorum sapiente, veniam nisi modi impedit amet magni asperiores, magnam iure facere eaque sed! Blanditiis, libero numquam quos quis reiciendis porro sunt ipsam nisi sapiente, voluptatibus quas fuga ea cumque at vitae eos aspernatur distinctio. Officiis iste eligendi facilis deserunt vitae ea dicta sapiente. Officiis, suscipit nesciunt! Quidem modi nam placeat aut sint suscipit doloribus architecto natus necessitatibus beatae quae incidunt eligendi, sequi fugit quis culpa nobis maiores. Molestiae quae voluptate quidem velit ratione! Aspernatur, nam laborum! Necessitatibus omnis provident facere velit ducimus?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptate ipsa, beatae, enim dolor vero pariatur consectetur assumenda, optio odit in architecto atque expedita! Laborum, cumque nemo consequuntur eveniet quod consequatur in, culpa architecto aperiam ipsum vero tenetur porro nihil tempora quas blanditiis adipisci! Necessitatibus suscipit deserunt autem illum tenetur ut explicabo aliquid, quaerat a quam temporibus nihil aliquam quae voluptate labore repellendus. Animi id officia unde ad vel. Officia facilis, iusto dolorem fuga dolore necessitatibus voluptate neque ratione quia iste architecto sequi illum deserunt, vitae praesentium hic quasi. Possimus in ipsam, adipisci pariatur reiciendis sed fugit voluptates optio maiores tempore alias fuga fugiat inventore sapiente exercitationem laborum sit est animi atque dolor aspernatur excepturi doloribus natus quaerat! Sit beatae tempore quasi ut veniam quia quos, harum neque saepe veritatis quisquam adipisci nam blanditiis quo ipsa dolore. Facere atque quisquam reiciendis doloribus distinctio pariatur assumenda sequi voluptatibus recusandae fugiat, mollitia nemo animi? Ullam ab, dolores aliquam molestiae dolore autem quo amet aut esse, debitis cum, nisi a magni consequatur vel sunt quae sequi officia provident consequuntur. Exercitationem dolores enim numquam accusantium quod pariatur repudiandae voluptates quo ipsa non. Dolorum aut minima reprehenderit facilis dolore saepe nesciunt natus tempora fugiat, repudiandae velit voluptatem eveniet aperiam sed a, quo dolorem quod adipisci nobis deleniti quisquam sequi. Quisquam voluptatem officia quae blanditiis. Natus nisi harum doloremque labore doloribus laborum est ipsam officia a saepe minus rem iste, excepturi placeat commodi aspernatur? Consectetur asperiores quis dolores iusto ullam saepe accusantium rem! Soluta sint, hic quod exercitationem aspernatur ad animi. Corporis reiciendis quia nam odit mollitia aspernatur repudiandae corrupti distinctio, amet velit optio. Praesentium doloribus quibusdam sint voluptas eius, rerum consequatur id minus in odio laboriosam maxime eum natus iste velit? Perferendis adipisci soluta cupiditate aliquid, alias, voluptates quam, rem in consequatur autem placeat distinctio!</p>
+
     </body>
 </html>
